@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* INTRO */
+
+.intro {
+  width: 35%;
+  text-align: center;
+  margin: 20px;
+}
+
+.intro p {
+  margin-top: 20px;
+}
+/*  */
+
+.infos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  padding: 20px;
+}
+
+/* BOXES */
+
+.box {
+  width: 25%;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 0.4em;
+}
+
+.two-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin: 0 20px 0 20px;
+}
+
+.box1 {
+  margin-bottom: 20px;
+}
+
+.box1,
+.box2 {
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 0.4em;
+}
+
+/* IMAGES  */
+
+img {
+  margin-top: 30px;
+  width: 20%;
+}
+
+.img {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* TEXT */
+
+h3 {
+  margin-bottom: 10px;
+}
+
+/* BORDER COLORS */
+
+.red {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.green {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.yellow {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.blue {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
