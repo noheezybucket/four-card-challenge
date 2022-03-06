@@ -6,22 +6,24 @@
 }
 
 body {
-  height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
-  font-family: Poppins;
+  font-family: Poppins, Outfit;
+  background-color: hsl(0, 0%, 98%);
 }
 
 /* INTRO */
 
 .intro {
-  width: 35%;
+  width: 100%;
+  max-width: 400px;
   display: flex;
   align-items: center;
   flex-direction: column;
   margin: 20px;
   color: hsl(234, 12%, 34%);
+  text-align: center;
 }
 
 .intro p {
@@ -33,46 +35,36 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  width: 80%;
-  padding: 20px;
+  justify-content: space-around;
+  max-width: 900px;
+}
+
+@media (max-width: 856px) {
+  .infos {
+    flex-direction: column;
+  }
 }
 
 /* BOXES */
 
 .box {
-  width: 25%;
-  border: 1px solid black;
-  padding: 20px;
-  border-radius: 0.4em;
+  width: 100%;
+  max-width: 320px;
   color: hsl(229, 6%, 66%);
+  margin: 10px;
 }
 
-.two-boxes {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 30%;
-  margin: 0 20px 0 20px;
-  color: hsl(229, 6%, 66%);
-}
-
-.box1 {
-  margin-bottom: 20px;
-}
-
-.box1,
-.box2 {
-  border: 1px solid black;
-  padding: 20px;
-  border-radius: 0.4em;
+@media (max-width: 320px) {
+  .box {
+    width: 85%;
+  }
 }
 
 /* IMAGES  */
 
 img {
-  margin-top: 30px;
-  width: 20%;
+  width: 25%;
+  margin-top: 20px;
 }
 
 .img {
@@ -103,20 +95,32 @@ h3 {
   font-size: 12px;
 }
 
-/* BORDER COLORS */
+/* BORDER SETTINGS */
 
 .red {
-  border-top: 4px solid hsl(0, 78%, 62%);
+  border-top: 4px solid hsl(0, 78%, 62%) !important;
 }
 
 .green {
-  border-top: 4px solid hsl(180, 62%, 55%);
+  border-top: 4px solid hsl(180, 62%, 55%) !important;
 }
 
 .yellow {
-  border-top: 4px solid hsl(34, 97%, 64%);
+  border-top: 4px solid hsl(34, 97%, 64%) !important;
 }
 
 .blue {
-  border-top: 4px solid hsl(212, 86%, 64%);
+  border-top: 4px solid hsl(212, 86%, 64%) !important;
+}
+
+.green,
+.red,
+.yellow,
+.blue {
+  padding: 20px;
+  border-radius: 0.3em;
+  border: 1px solid black;
+}
+.red {
+  margin-bottom: 20px;
 }
